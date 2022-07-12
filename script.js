@@ -46,7 +46,7 @@ $(document).ready(function() {
                 targetDiv = offSetsTop[2]
                 break;
             case "Tech":
-                targetDiv = offSetsTop[3]
+                targetDiv = offSetsTop[3] + 50
                 break;
              case "Con":
                 targetDiv = offSetsTop[4]
@@ -71,7 +71,7 @@ function reveal() {
         let elementTop = reveals[i].getBoundingClientRect().top;
         let elementVisible = 150;
 
-        if (elementTop < windowHeight - elementVisible-400) {
+        if (elementTop < windowHeight - elementVisible-300) {
             reveals[i].classList.add("active");
         } else {
             reveals[i].classList.remove("active");
