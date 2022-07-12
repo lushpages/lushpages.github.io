@@ -10,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
-<!--    Dodaj favicon   -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Lush Pages</title>
 </head>
 <body>
@@ -20,14 +24,15 @@
             <h3>Radosław Bujny</h3>
         </div>
         <div class="menu">
-            <span class="menuItem">About me</span>
-            <span class="menuItem">About "Lush Pages"</span>
-            <span class="menuItem">Projects</span>
-            <span class="menuItem">Technologies</span>
-            <span class="menuItem"  >Contact</span>
+            <span class="menuItem menuReveal" title="ABm">About me</span>
+            <span class="menuItem menuReveal" title="ABLP">About "LP"</span>
+            <span class="menuItem menuReveal" title="Pr">Projects</span>
+            <span class="menuItem menuReveal" title="Tech">Technologies</span>
+            <span class="menuItem menuReveal" title="Con">Contact</span>
         </div>
         <div class="main">
-            <h2>About me</h2>
+            <div class="toReveal">
+            <h2 id="ABm">About me</h2>
             <div class="content borderOn">
                 <img src="img/me.jpg" alt="Just me" width="233px" height="300px" class="rounded">
                 <p>
@@ -39,7 +44,9 @@
                     Starting in October, I'll be studying IT at the Poznan University of Technology.
                 </p>
             </div>
-            <h2>About "Lush Pages"</h2>
+            </div>
+            <div class="toReveal">
+            <h2 id="ABLP">About "Lush Pages"</h2>
             <div class="content borderOn">
                 <p>"Lush Pages" is the definition of my projects.
                     <br>
@@ -51,19 +58,23 @@
                 </p>
                 <img src="img/logo.png" alt="Logo" width="300px" height="300px">
             </div>
-            <h2>My projects</h2>
+            </div>
+            <div class="toReveal">
+            <h2 id="Pr">My projects</h2>
             <div class="content">
                 <div class="projects">
                     <h4>School Currency App</h4><br>
                     <img src="img/project1.png">
-                    <i class="fa fa-globe"></i><a href="#"> School Currency App online</a>
+                    <i class="fa fa-globe"></i><a href="#" class="contact"> School Currency App online</a>
                     <br>
                     <i class="fa fa-github"></i> <a href="#" class="contact">GitHub</a>
                     <p>School Currency App is a school project in which we used all web technologies, that we knew during learning process.
                     </p>
                 </div>
             </div>
-            <h2>Technology stack</h2>
+            </div>
+            <div class="toReveal">
+            <h2 id="Tech">Technology stack</h2>
             <div class="content borderOn technologies">
                 <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"> <img src="logos/html5.png" width="100px" height="100px" alt="html5"></a>
                 <a href="https://en.wikipedia.org/wiki/CSS" target="_blank"> <img src="logos/css3.png" width="100px" height="100px" alt="css3"></a>
@@ -77,7 +88,9 @@
                 <a href="https://www.mysql.com/" target="_blank"> <img src="logos/mysql.png" width="100px" height="100px" alt="mysql"></a>
                 <a href="https://www.sqlite.org/index.html" target="_blank"> <img src="logos/sqlite-icon.png" width="100px" height="100px" alt="sqlite"></a>
             </div>
-            <h2>Contact</h2>
+            </div>
+            <div class="toReveal">
+            <h2 id="Con">Contact</h2>
             <div class="contact">
                 <div id="github">
                     <i class="fa fa-github" style="font-size: 28px"></i> <a href="https://github.com/rbujny" class="contact">GitHub</a>
@@ -93,8 +106,9 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="footer">
-            <p>Creator:  Lush Pages - Radosław Bujny 2022 &copy; </p>
+            <p style="display: block">© 2022 Lush Pages - Radosław Bujny</p><br>
         </div>
     </div>
 <script src="script.js"></script>
